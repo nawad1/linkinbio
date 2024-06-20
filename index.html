@@ -3,33 +3,72 @@
   <head>
     <title>My first website</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
       * {
         border: 1px lightblue solid;
       }
+      html {
+     min-height: 100%;
+    }
       body {
+    min-height: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
+    background: linear-gradient(90deg, #13346c, #344b80, #506395, #6b7da9, #8797be, #a4b2d4, #c1cee9, #e0eaff);
+    color: rgba(255, 255, 255, 1.0);
      } 
      .avatar-image {
-    width: 128px;
-    height: 128px;
-    object-fit: cover;
-    border-radius: 128px;
-  }
-  .thumbnail-image {
+     width: 128px;
+     height: 128px;
+     border-radius: 128px;
+     object-fit: cover;
+    }
+    .thumbnail-image {
     width: 48px;
-  height: 48px;
-  border-radius: 48px;
-  object-fit: cover;
-  }
+    height: 48px;
+    border-radius: 48px;
+    object-fit: cover;
+    }
+    a {
+     color: rgba(255, 255, 255, 1.0);
+    }
+    /* What is referred to as the items div on the assignment  */
+    .links-row { 
+    margin-bottom: 30px;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(92, 114, 244, 0.8);
+    }
+    .main-container {
+    max-width: 640px;
+    margin: auto;
+    }
+    .image-row {
+     margin-bottom: 20px;
+     text-align: center;
+    }
+    .name-row {
+    margin-bottom: 30px;
+    text-align: center;
+    }
+    .social-icons-row {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    }.link-text {
+    text-align: center;
+    flex-grow: 1;
+    }
     </style>
   </head>
   <body> 
     <div class="main-container">
 
-      <div class="image-row"> <img class="avatar-image" src="/images/nancy.jpeg" alt="nancy awad headshot"> </div>
+      <div class="image-row"> <img class="avatar-image" src="/images/NancyAwad.jpg" alt="nancy awad headshot"> </div>
+
       <div class="name-row"> <strong> Nancy Awad</strong></div>
+
       <div class ="social-icons-row"> 
         <a href="https://www.linkedin.com/in/nancynawad/" target="_blank">
           LinkedIn
@@ -38,31 +77,36 @@
         <a href="https://www.instagram.com/nancyawad98/" target="_blank">
           Instagram
         </a>
+
+        <a href="https://github.com/nawad1" target="_blank">
+          GitHub
+        </a>
+
       </div>
-      <div class="links-row" 
-        <h1> <strong>Read about my social impact initative</strong></h1>
 
-        <div> <img class="thumbnail-image" src="/images/BSeshat.png" alt=""> </div>  
+      <div class="links-row">
+        <div class="item"> <img class="thumbnail-image" src="/images/BSeshat.png" alt=""> <strong> Read about my social impact initative </strong> </div> 
 
-        <div> <a target="_blank" href="https://egyptianstreets.com/2019/07/17/benat-seshat-a-digital-literacy-initiative-empowering-young-orphan-women-in-upper-egypt/?fbclid=IwAR06JwEG5S_Gz_DsvQ7cxbxRiWsJQ0Ph4yvuoSZbLp3sw6A4rjj5Xoa1BXY">
+        <div> <a class="link-text" target="_blank" href="https://egyptianstreets.com/2019/07/17/benat-seshat-a-digital-literacy-initiative-empowering-young-orphan-women-in-upper-egypt/?fbclid=IwAR06JwEG5S_Gz_DsvQ7cxbxRiWsJQ0Ph4yvuoSZbLp3sw6A4rjj5Xoa1BXY">
           Coverage by Egyptian Streets
         </a> </div>
 
-       <div> <a target="_blank" href="https://www.egyptindependent.com/benat-seshat-initiative-uses-digital-literacy-to-empower-orphan-women/">
+       <div> <a class="link-text" target="_blank" href="https://www.egyptindependent.com/benat-seshat-initiative-uses-digital-literacy-to-empower-orphan-women/">
           Coverage by the Egyptian Independent 
         </a> </div>
 
-        <div> <a target="_blank" href="https://stepfeed.com/program-in-egypt-lets-female-orphans-channel-their-inner-tech-goddess-9197">
+        <div> <a class="link-text" target="_blank" href="https://stepfeed.com/program-in-egypt-lets-female-orphans-channel-their-inner-tech-goddess-9197">
           Coverage by StepFeed
         </a> </div>
 
-       <div> <a target="_blank" href="https://www.cairo360.com/article/city-life/banat-seshat-the-egyptian-initiative-looking-to-empower-upper-egyptian-women/">
+       <div> <a class="link-text" target="_blank" href="https://www.cairo360.com/article/city-life/banat-seshat-the-egyptian-initiative-looking-to-empower-upper-egyptian-women/">
           Coverage by Cairo360
         </a> </div>
 
-        <div> <a target="_blank" href="hhttps://www.swarthmore.edu/news-events/nancy-awad-%E2%80%9920-gives-inside-look-lang-opportunity-scholar-project?fbclid=IwAR10Eyuj3AiezS4lMhxZQpsbYI1f9cd8yTLJlQjpzPH1XTJRQtXJoKIDOqo">
+        <div> <a class="link-text" target="_blank" href="hhttps://www.swarthmore.edu/news-events/nancy-awad-%E2%80%9920-gives-inside-look-lang-opportunity-scholar-project?fbclid=IwAR10Eyuj3AiezS4lMhxZQpsbYI1f9cd8yTLJlQjpzPH1XTJRQtXJoKIDOqo">
           Coverage by Swarthmore College
         </a> </div>
+
       </div>
     </div> 
   </body>
